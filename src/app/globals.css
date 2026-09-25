@@ -363,7 +363,7 @@ button {
   font-size: 12px;
 }
 
-/* OTROS DÍAS */
+/* OTROS DÃAS */
 
 .event-list {
   display: flex;
@@ -1206,7 +1206,7 @@ body {
   color: #746A62;
 }
 
-/* D�AS */
+/* DÍAS */
 
 .day-panel {
   background: #FBF8F3;
@@ -1233,7 +1233,7 @@ body {
   color: var(--text);
 }
 
-/* D�A VAC�O */
+/* DÍA VACÍO */
 
 .empty-day {
   background: #FFFDFC;

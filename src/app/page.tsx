@@ -19,35 +19,35 @@ const weekendGroups = [
   {
     title: "3 y 4 de octubre",
     days: [
-      { label: "Sábado", day: 3, month: "OCT" },
+      { label: "SÃ¡bado", day: 3, month: "OCT" },
       { label: "Domingo", day: 4, month: "OCT" }
     ]
   },
   {
     title: "10 y 11 de octubre",
     days: [
-      { label: "Sábado", day: 10, month: "OCT" },
+      { label: "SÃ¡bado", day: 10, month: "OCT" },
       { label: "Domingo", day: 11, month: "OCT" }
     ]
   },
   {
     title: "17 y 18 de octubre",
     days: [
-      { label: "Sábado", day: 17, month: "OCT" },
+      { label: "SÃ¡bado", day: 17, month: "OCT" },
       { label: "Domingo", day: 18, month: "OCT" }
     ]
   },
   {
     title: "24 y 25 de octubre",
     days: [
-      { label: "Sábado", day: 24, month: "OCT" },
+      { label: "SÃ¡bado", day: 24, month: "OCT" },
       { label: "Domingo", day: 25, month: "OCT" }
     ]
   },
   {
     title: "31 de octubre y 1 de noviembre",
     days: [
-      { label: "Sábado", day: 31, month: "OCT" },
+      { label: "SÃ¡bado", day: 31, month: "OCT" },
       { label: "Domingo", day: 1, month: "NOV" }
     ]
   },
@@ -55,28 +55,28 @@ const weekendGroups = [
   {
     title: "7 y 8 de noviembre",
     days: [
-      { label: "Sábado", day: 7, month: "NOV" },
+      { label: "SÃ¡bado", day: 7, month: "NOV" },
       { label: "Domingo", day: 8, month: "NOV" }
     ]
   },
   {
     title: "14 y 15 de noviembre",
     days: [
-      { label: "Sábado", day: 14, month: "NOV" },
+      { label: "SÃ¡bado", day: 14, month: "NOV" },
       { label: "Domingo", day: 15, month: "NOV" }
     ]
   },
   {
     title: "21 y 22 de noviembre",
     days: [
-      { label: "Sábado", day: 21, month: "NOV" },
+      { label: "SÃ¡bado", day: 21, month: "NOV" },
       { label: "Domingo", day: 22, month: "NOV" }
     ]
   },
   {
     title: "28 y 29 de noviembre",
     days: [
-      { label: "Sábado", day: 28, month: "NOV" },
+      { label: "SÃ¡bado", day: 28, month: "NOV" },
       { label: "Domingo", day: 29, month: "NOV" }
     ]
   }
@@ -141,7 +141,7 @@ export default function Home() {
           className={mode === "eventos" ? "active" : ""}
           onClick={() => setMode("eventos")}
         >
-          Eventos artÃ­sticos
+          Eventos artÃƒÂ­sticos
         </button>
 
         <button
@@ -167,7 +167,7 @@ export default function Home() {
 
             <div>
               <strong>{unresolved}</strong>
-              <span>En definiciÃ³n</span>
+              <span>En definiciÃƒÂ³n</span>
             </div>
 
             <div>
@@ -251,7 +251,7 @@ export default function Home() {
           {weekEvents.length > 0 && (
             <section className="section-block">
               <div className="section-title">
-                <h2>Otros dÃ­as</h2>
+                <h2>Otros dÃƒÂ­as</h2>
               </div>
 
               <div className="event-list">
@@ -352,7 +352,7 @@ export default function Home() {
               className="close-button"
               onClick={() => setSelectedEvent(null)}
             >
-              Ã—
+              Ãƒâ€”
             </button>
 
             <span className={statusClass(selectedEvent.status)}>
@@ -390,7 +390,7 @@ export default function Home() {
 
               {selectedEvent.discussed?.map((item) => (
                 <div className="note-row" key={item}>
-                  <span className="note-icon">âœ“</span>
+                  <span className="note-icon">Ã¢Å“â€œ</span>
                   <p>{item}</p>
                 </div>
               ))}
@@ -398,7 +398,7 @@ export default function Home() {
 
             <section className="detail-section">
               <div className="detail-heading">
-                <h3>QuÃ© falta</h3>
+                <h3>QuÃƒÂ© falta</h3>
                 <span>{selectedEvent.pending?.length || 0} pendientes</span>
               </div>
 
