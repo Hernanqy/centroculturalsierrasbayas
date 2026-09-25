@@ -50,6 +50,35 @@ const weekendGroups = [
       { label: "Sábado", day: 31, month: "OCT" },
       { label: "Domingo", day: 1, month: "NOV" }
     ]
+  },
+
+  {
+    title: "7 y 8 de noviembre",
+    days: [
+      { label: "Sábado", day: 7, month: "NOV" },
+      { label: "Domingo", day: 8, month: "NOV" }
+    ]
+  },
+  {
+    title: "14 y 15 de noviembre",
+    days: [
+      { label: "Sábado", day: 14, month: "NOV" },
+      { label: "Domingo", day: 15, month: "NOV" }
+    ]
+  },
+  {
+    title: "21 y 22 de noviembre",
+    days: [
+      { label: "Sábado", day: 21, month: "NOV" },
+      { label: "Domingo", day: 22, month: "NOV" }
+    ]
+  },
+  {
+    title: "28 y 29 de noviembre",
+    days: [
+      { label: "Sábado", day: 28, month: "NOV" },
+      { label: "Domingo", day: 29, month: "NOV" }
+    ]
   }
 ];
 
@@ -86,14 +115,20 @@ export default function Home() {
       event.status === "Por confirmar"
   ).length;
 
-  const weekendNumbers = new Set([3, 4, 10, 11, 17, 18, 24, 25, 31, 1]);
-
-  const weekEvents = filteredEvents.filter(
-    (event) => !weekendNumbers.has(event.day)
+  const weekendKeys = new Set(
+    weekendGroups.flatMap((group) =>
+      group.days.map((day) => `${day.month}-${day.day}`)
+    )
   );
 
-  const eventsForDay = (day: number) =>
-    filteredEvents.filter((event) => event.day === day);
+  const weekEvents = filteredEvents.filter(
+    (event) => !weekendKeys.has(`${event.month}-${event.day}`)
+  );
+
+  const eventsForDay = (day: number, month: string) =>
+    filteredEvents.filter(
+      (event) => event.day === day && event.month === month
+    );
 
   return (
     <main className="app-shell">
@@ -106,7 +141,7 @@ export default function Home() {
           className={mode === "eventos" ? "active" : ""}
           onClick={() => setMode("eventos")}
         >
-          Eventos artísticos
+          Eventos artÃ­sticos
         </button>
 
         <button
@@ -132,7 +167,7 @@ export default function Home() {
 
             <div>
               <strong>{unresolved}</strong>
-              <span>En definición</span>
+              <span>En definiciÃ³n</span>
             </div>
 
             <div>
@@ -165,7 +200,7 @@ export default function Home() {
 
                   <div className="weekend-days">
                     {group.days.map((dayItem) => {
-                      const dayEvents = eventsForDay(dayItem.day);
+                      const dayEvents = eventsForDay(dayItem.day, dayItem.month);
 
                       return (
                         <div className="day-panel" key={dayItem.label + dayItem.day}>
@@ -216,7 +251,7 @@ export default function Home() {
           {weekEvents.length > 0 && (
             <section className="section-block">
               <div className="section-title">
-                <h2>Otros días</h2>
+                <h2>Otros dÃ­as</h2>
               </div>
 
               <div className="event-list">
@@ -317,7 +352,7 @@ export default function Home() {
               className="close-button"
               onClick={() => setSelectedEvent(null)}
             >
-              ×
+              Ã—
             </button>
 
             <span className={statusClass(selectedEvent.status)}>
@@ -355,7 +390,7 @@ export default function Home() {
 
               {selectedEvent.discussed?.map((item) => (
                 <div className="note-row" key={item}>
-                  <span className="note-icon">✓</span>
+                  <span className="note-icon">âœ“</span>
                   <p>{item}</p>
                 </div>
               ))}
@@ -363,7 +398,7 @@ export default function Home() {
 
             <section className="detail-section">
               <div className="detail-heading">
-                <h3>Qué falta</h3>
+                <h3>QuÃ© falta</h3>
                 <span>{selectedEvent.pending?.length || 0} pendientes</span>
               </div>
 

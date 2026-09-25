@@ -1083,3 +1083,314 @@ button {
   margin-bottom: 9px;
 }
 
+
+/* ==================================================
+   PALETA GENERAL - CENTRO CULTURAL SIERRAS BAYAS
+   ================================================== */
+
+:root {
+  --bg: #F6F1E9;
+  --surface: #FFFFFF;
+  --surface-soft: #FBF8F3;
+
+  --text: #171717;
+  --muted: #69645F;
+  --line: #E7DED3;
+
+  --primary: #214B57;
+  --primary-dark: #173942;
+
+  --terracotta: #C96F4A;
+  --terracotta-soft: #F5E2D9;
+
+  --sky: #DCEEF5;
+  --sky-strong: #9FCFDF;
+
+  --sand: #EFE4D4;
+
+  --confirmed-bg: #DCEFE5;
+  --confirmed-text: #236548;
+
+  --planning-bg: #E4EAF8;
+  --planning-text: #435D93;
+
+  --pending-bg: #F8E8C8;
+  --pending-text: #946414;
+
+  --talked-bg: #F3DDD5;
+  --talked-text: #9A4E32;
+}
+
+/* FONDO GENERAL */
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* HEADER */
+
+.topbar {
+  border-bottom: 1px solid var(--line);
+}
+
+.topbar h1 {
+  color: var(--primary-dark);
+}
+
+/* BOTONES PRINCIPALES */
+
+.mode-switch button {
+  color: #59534E;
+}
+
+.mode-switch button:hover {
+  background: #EEE6DC;
+}
+
+.mode-switch button.active {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 8px 20px rgba(33, 75, 87, 0.18);
+}
+
+/* RESUMEN */
+
+.summary-bar > div {
+  background: var(--surface);
+  border-color: var(--line);
+  box-shadow:
+    0 4px 14px rgba(70, 55, 45, 0.035);
+}
+
+.summary-bar strong {
+  color: var(--primary-dark);
+}
+
+.summary-bar span {
+  color: var(--muted);
+}
+
+/* FILTROS */
+
+.filters button {
+  background: #FFFDFC;
+  border-color: var(--line);
+  color: #554F49;
+}
+
+.filters button:hover {
+  border-color: #CDBEAF;
+  background: #FAF5EF;
+}
+
+.filters button.active {
+  background: var(--terracotta);
+  border-color: var(--terracotta);
+  color: white;
+}
+
+/* TARJETAS FINES DE SEMANA */
+
+.weekend-card {
+  background: var(--surface);
+  border-color: var(--line);
+
+  box-shadow:
+    0 2px 5px rgba(60, 45, 35, 0.025),
+    0 12px 30px rgba(60, 45, 35, 0.045);
+}
+
+.weekend-title {
+  color: #746A62;
+}
+
+/* DÍAS */
+
+.day-panel {
+  background: #FBF8F3;
+  border-color: #EAE0D5;
+}
+
+.day-panel::before {
+  background: rgba(201, 111, 74, 0.06);
+}
+
+.day-big {
+  background: var(--primary);
+  color: white;
+
+  box-shadow:
+    0 8px 20px rgba(33, 75, 87, 0.17);
+}
+
+.day-labels span {
+  color: #7B726B;
+}
+
+.day-labels strong {
+  color: var(--text);
+}
+
+/* DÍA VACÍO */
+
+.empty-day {
+  background: #FFFDFC;
+  border-color: #D9CFC4;
+  color: #988F87;
+}
+
+/* ACTIVIDADES */
+
+.mini-event,
+.event-card {
+  background: var(--surface);
+  border-color: var(--line);
+
+  box-shadow:
+    0 3px 12px rgba(60, 45, 35, 0.035);
+}
+
+.mini-event:hover,
+.event-card:hover {
+  border-color: #CABBAE;
+
+  box-shadow:
+    0 10px 24px rgba(60, 45, 35, 0.08);
+}
+
+.mini-event-top h3,
+.event-header h3 {
+  color: #191919;
+}
+
+.mini-event-meta,
+.event-meta {
+  color: #716A64;
+}
+
+.category {
+  color: #9A8E84;
+}
+
+/* FECHA DE ACTIVIDAD */
+
+.date-box {
+  background: var(--terracotta);
+  color: white;
+}
+
+/* ESTADOS */
+
+.confirmed {
+  background: var(--confirmed-bg);
+  color: var(--confirmed-text);
+}
+
+.planning {
+  background: var(--planning-bg);
+  color: var(--planning-text);
+}
+
+.pending {
+  background: var(--pending-bg);
+  color: var(--pending-text);
+}
+
+.talked {
+  background: var(--talked-bg);
+  color: var(--talked-text);
+}
+
+/* =========================================
+   TALLERES
+   ========================================= */
+
+.workshop-day-card {
+  background: #FFFFFF;
+  border-color: var(--line);
+
+  box-shadow:
+    0 4px 16px rgba(60, 45, 35, 0.04);
+}
+
+.workshop-day-head {
+  background: var(--primary);
+  color: white;
+}
+
+.workshop-day-body {
+  background: #FFFDFC;
+}
+
+/* BLOQUE HORARIO */
+
+.workshop-slot {
+  background: #F8F4EE;
+  border: 0;
+  box-shadow: inset 0 0 0 1px #E8DED3;
+}
+
+.workshop-slot-time {
+  color: #766C64;
+}
+
+/* ACTIVIDAD DE TALLER */
+
+.workshop-pill {
+  background: var(--sky);
+  color: #111111;
+
+  border: 0;
+
+  box-shadow:
+    0 2px 5px rgba(40, 70, 80, 0.04);
+}
+
+.workshop-pill:hover {
+  background: #CDE6F0;
+
+  box-shadow:
+    0 6px 14px rgba(40, 70, 80, 0.09);
+}
+
+/* PANEL LATERAL DE EVENTO */
+
+.modal-backdrop {
+  background: rgba(23, 34, 38, 0.48);
+}
+
+.event-detail {
+  background: #F8F4EE;
+}
+
+.close-button {
+  background: white;
+  border-color: var(--line);
+}
+
+.detail-meta > div,
+.detail-section {
+  background: white;
+  border-color: var(--line);
+}
+
+.detail-meta span {
+  color: #8A817A;
+}
+
+.note-row,
+.pending-row {
+  border-color: #EEE5DC;
+}
+
+.note-icon {
+  background: var(--sky);
+  color: var(--primary);
+}
+
+.pending-row input {
+  accent-color: var(--terracotta);
+}
+

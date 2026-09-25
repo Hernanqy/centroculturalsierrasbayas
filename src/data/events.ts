@@ -1,6 +1,9 @@
 import { CulturalEvent } from "@/types/event";
 
 export const events: CulturalEvent[] = [
+
+  // OCTUBRE
+
   {
     id: 1,
     day: 3,
@@ -12,17 +15,15 @@ export const events: CulturalEvent[] = [
     category: "Taller / Formación",
     place: "Centro Cultural Sierras Bayas",
     responsible: "Pame - Mauri",
-    description:
-      "Seminario intensivo de clown abierto a la comunidad.",
     discussed: [
-      "Actividad incorporada a la programación de octubre.",
-      "Cobertura prevista con Pame y Mauri."
+      "Actividad incorporada a la programación."
     ],
     pending: [
       "Revisar necesidades técnicas",
       "Confirmar comunicación"
     ]
   },
+
   {
     id: 2,
     day: 11,
@@ -33,18 +34,15 @@ export const events: CulturalEvent[] = [
     status: "Por confirmar",
     category: "Cine",
     place: "Centro Cultural Sierras Bayas",
-    description:
-      "Proyección de cine abierta a la comunidad.",
     discussed: [
-      "Se acordó realizar una función de cine.",
-      "Horario previsto: 20:00."
+      "Función prevista para las 20:00."
     ],
     pending: [
       "Definir película",
-      "Preparar comunicación",
-      "Confirmar requerimientos técnicos"
+      "Preparar comunicación"
     ]
   },
+
   {
     id: 3,
     day: 12,
@@ -55,17 +53,12 @@ export const events: CulturalEvent[] = [
     status: "Planificando",
     category: "Infancias / Cine",
     place: "Centro Cultural Sierras Bayas",
-    description:
-      "Propuesta de cortometrajes especialmente pensada para infancias.",
-    discussed: [
-      "La actividad forma parte de la programación del Centro."
-    ],
     pending: [
       "Confirmar horario",
-      "Seleccionar cortometrajes",
-      "Definir público destinatario"
+      "Seleccionar cortometrajes"
     ]
   },
+
   {
     id: 4,
     day: 17,
@@ -76,19 +69,13 @@ export const events: CulturalEvent[] = [
     status: "Hablado",
     category: "Música",
     place: "Centro Cultural Sierras Bayas",
-    description:
-      "Encuentro musical con bandas de Sierras Bayas.",
-    discussed: [
-      "La actividad está prevista para las 19:00.",
-      "Se propone trabajar con bandas vinculadas a Sierras Bayas."
-    ],
     pending: [
       "Definir bandas",
       "Confirmar sonido",
-      "Definir necesidades técnicas",
       "Preparar difusión"
     ]
   },
+
   {
     id: 5,
     day: 24,
@@ -100,17 +87,96 @@ export const events: CulturalEvent[] = [
     category: "Celebración",
     place: "Centro Cultural Sierras Bayas",
     responsible: "Pamela",
-    description:
-      "Fiesta de Gala en el marco del 110° aniversario del Centro Cultural de Sierras Bayas.",
-    discussed: [
-      "Actividad confirmada.",
-      "Pamela figura como referente."
-    ],
     pending: [
       "Definir horario",
       "Definir montaje",
-      "Revisar sonido",
-      "Organizar comunicación"
+      "Revisar sonido"
+    ]
+  },
+
+  // NOVIEMBRE
+
+  {
+    id: 6,
+    day: 7,
+    month: "NOV",
+    date: "7 de noviembre de 2026",
+    title: "Obra de teatro Julio Benítez",
+    time: "Horario a confirmar",
+    status: "Por confirmar",
+    category: "Teatro",
+    place: "Sierras Bayas · lugar a definir",
+    pending: [
+      "Confirmar horario",
+      "Confirmar espacio"
+    ]
+  },
+
+  {
+    id: 7,
+    day: 7,
+    month: "NOV",
+    date: "7 de noviembre de 2026",
+    title: "Inicio Fotografía · 1ª etapa",
+    time: "Horario a confirmar",
+    status: "Planificando",
+    category: "Fotografía",
+    place: "Sierras Bayas · lugar a definir",
+    pending: [
+      "Definir horario",
+      "Confirmar espacio"
+    ]
+  },
+
+  {
+    id: 8,
+    day: 14,
+    month: "NOV",
+    date: "14 de noviembre de 2026",
+    title: "Segunda jornada Fotografía · 1ª etapa",
+    time: "Horario a confirmar",
+    status: "Planificando",
+    category: "Fotografía",
+    place: "Sierras Bayas · lugar a definir",
+    discussed: [
+      "En el marco de Noche de los Museos."
+    ],
+    pending: [
+      "Definir horario",
+      "Confirmar espacio"
+    ]
+  },
+
+  {
+    id: 9,
+    day: 15,
+    month: "NOV",
+    date: "15 de noviembre de 2026",
+    title: "Guiada nocturna",
+    time: "Horario a confirmar",
+    status: "Planificando",
+    category: "Visita / Recorrido",
+    place: "Sierras Bayas · lugar a definir",
+    pending: [
+      "Definir recorrido",
+      "Definir horario"
+    ]
+  },
+
+  {
+    id: 10,
+    day: 21,
+    month: "NOV",
+    date: "21 de noviembre de 2026",
+    title: "2ª etapa · Pintura con Fitte en el museo",
+    time: "Horario a confirmar",
+    status: "Planificando",
+    category: "Arte / Taller",
+    place: "Museo · Sierras Bayas",
+    pending: [
+      "Definir horario",
+      "Completar organización"
     ]
   }
+
 ];
