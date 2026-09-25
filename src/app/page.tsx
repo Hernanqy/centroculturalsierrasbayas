@@ -16,38 +16,43 @@ const filters: Array<"Todos" | EventStatus> = [
 ];
 
 const weekendGroups = [
+
   {
     title: "3 y 4 de octubre",
     days: [
-      { label: "Sábado", day: 3, month: "OCT" },
+      { label: "S\u00E1bado", day: 3, month: "OCT" },
       { label: "Domingo", day: 4, month: "OCT" }
     ]
   },
+
   {
     title: "10 y 11 de octubre",
     days: [
-      { label: "Sábado", day: 10, month: "OCT" },
+      { label: "S\u00E1bado", day: 10, month: "OCT" },
       { label: "Domingo", day: 11, month: "OCT" }
     ]
   },
+
   {
     title: "17 y 18 de octubre",
     days: [
-      { label: "Sábado", day: 17, month: "OCT" },
+      { label: "S\u00E1bado", day: 17, month: "OCT" },
       { label: "Domingo", day: 18, month: "OCT" }
     ]
   },
+
   {
     title: "24 y 25 de octubre",
     days: [
-      { label: "Sábado", day: 24, month: "OCT" },
+      { label: "S\u00E1bado", day: 24, month: "OCT" },
       { label: "Domingo", day: 25, month: "OCT" }
     ]
   },
+
   {
     title: "31 de octubre y 1 de noviembre",
     days: [
-      { label: "Sábado", day: 31, month: "OCT" },
+      { label: "S\u00E1bado", day: 31, month: "OCT" },
       { label: "Domingo", day: 1, month: "NOV" }
     ]
   },
@@ -55,31 +60,139 @@ const weekendGroups = [
   {
     title: "7 y 8 de noviembre",
     days: [
-      { label: "Sábado", day: 7, month: "NOV" },
+      { label: "S\u00E1bado", day: 7, month: "NOV" },
       { label: "Domingo", day: 8, month: "NOV" }
     ]
   },
+
   {
     title: "14 y 15 de noviembre",
     days: [
-      { label: "Sábado", day: 14, month: "NOV" },
+      { label: "S\u00E1bado", day: 14, month: "NOV" },
       { label: "Domingo", day: 15, month: "NOV" }
     ]
   },
+
   {
     title: "21 y 22 de noviembre",
     days: [
-      { label: "Sábado", day: 21, month: "NOV" },
+      { label: "S\u00E1bado", day: 21, month: "NOV" },
       { label: "Domingo", day: 22, month: "NOV" }
     ]
   },
+
   {
     title: "28 y 29 de noviembre",
     days: [
-      { label: "Sábado", day: 28, month: "NOV" },
+      { label: "S\u00E1bado", day: 28, month: "NOV" },
       { label: "Domingo", day: 29, month: "NOV" }
     ]
+  },
+
+  {
+    title: "5 y 6 de diciembre",
+    days: [
+      { label: "S\u00E1bado", day: 5, month: "DIC" },
+      { label: "Domingo", day: 6, month: "DIC" }
+    ]
+  },
+
+  {
+    title: "12 y 13 de diciembre",
+    days: [
+      { label: "S\u00E1bado", day: 12, month: "DIC" },
+      { label: "Domingo", day: 13, month: "DIC" }
+    ]
+  },
+
+  {
+    title: "19 y 20 de diciembre",
+    days: [
+      { label: "S\u00E1bado", day: 19, month: "DIC" },
+      { label: "Domingo", day: 20, month: "DIC" }
+    ]
+  },
+
+  {
+    title: "26 y 27 de diciembre",
+    days: [
+      { label: "S\u00E1bado", day: 26, month: "DIC" },
+      { label: "Domingo", day: 27, month: "DIC" }
+    ]
+  },
+
+  {
+    title: "2 y 3 de enero",
+    days: [
+      { label: "S\u00E1bado", day: 2, month: "ENE" },
+      { label: "Domingo", day: 3, month: "ENE" }
+    ]
+  },
+
+  {
+    title: "9 y 10 de enero",
+    days: [
+      { label: "S\u00E1bado", day: 9, month: "ENE" },
+      { label: "Domingo", day: 10, month: "ENE" }
+    ]
+  },
+
+  {
+    title: "16 y 17 de enero",
+    days: [
+      { label: "S\u00E1bado", day: 16, month: "ENE" },
+      { label: "Domingo", day: 17, month: "ENE" }
+    ]
+  },
+
+  {
+    title: "23 y 24 de enero",
+    days: [
+      { label: "S\u00E1bado", day: 23, month: "ENE" },
+      { label: "Domingo", day: 24, month: "ENE" }
+    ]
+  },
+
+  {
+    title: "30 y 31 de enero",
+    days: [
+      { label: "S\u00E1bado", day: 30, month: "ENE" },
+      { label: "Domingo", day: 31, month: "ENE" }
+    ]
+  },
+
+  {
+    title: "6 y 7 de febrero",
+    days: [
+      { label: "S\u00E1bado", day: 6, month: "FEB" },
+      { label: "Domingo", day: 7, month: "FEB" }
+    ]
+  },
+
+  {
+    title: "13 y 14 de febrero",
+    days: [
+      { label: "S\u00E1bado", day: 13, month: "FEB" },
+      { label: "Domingo", day: 14, month: "FEB" }
+    ]
+  },
+
+  {
+    title: "20 y 21 de febrero",
+    days: [
+      { label: "S\u00E1bado", day: 20, month: "FEB" },
+      { label: "Domingo", day: 21, month: "FEB" }
+    ]
+  },
+
+  {
+    title: "27 y 28 de febrero",
+    days: [
+      { label: "S\u00E1bado", day: 27, month: "FEB" },
+      { label: "Domingo", day: 28, month: "FEB" }
+    ]
   }
+
 ];
 
 function statusClass(status: EventStatus) {
