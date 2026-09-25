@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Centro Cultural Sierras Bayas",
-  description: "Agenda y planificaciÃ³n cultural"
+  description: "Agenda y planificación cultural"
 };
 
 export default function RootLayout({
